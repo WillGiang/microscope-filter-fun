@@ -1,0 +1,178 @@
+<!doctype html>
+<html lang="en" class="no-js">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700' rel='stylesheet' type='text/css'>
+	<link href="https://fonts.googleapis.com/css?family=Noto+Sans" rel="stylesheet">
+
+	<link rel="stylesheet" href="css/reset.css"> <!-- CSS reset -->
+	<link rel="stylesheet" href="css/style.css"> <!-- Resource style -->
+	<script src="js/modernizr.js"></script> <!-- Modernizr -->
+  	
+	<title>ICI | Microscopes</title>
+</head>
+<body>
+	<header class="cd-header">
+		<h1>Microscopes</h1>
+	</header>
+
+	<main class="cd-main-content">
+		<div class="cd-tab-filter-wrapper">
+			<div class="cd-tab-filter">
+				<ul class="cd-filters">
+					<li class="placeholder"> 
+						<a data-type="all" href="#0">All</a> <!-- selected option on mobile -->
+					</li> 
+					<li class="filter"><a class="selected" href="#0" data-type="all">All</a></li>
+					<li class="filter" data-filter=".confocal"><a href="#0" data-type="confocal">Confocal</a></li>
+					<li class="filter" data-filter=".widefield"><a href="#0" data-type="widefield">Widefield</a></li>
+					<li class="filter" data-filter=".multiphoton"><a href="#0" data-type="multiphoton">Multiphoton</a></li>
+					<li class="filter" data-filter=".super-res"><a href="#0" data-type="super-res">Super-resolution</a></li>
+					<li class="filter" data-filter=".live-cell"><a href="#0" data-type="live-cell">Live cell</a></li>
+				</ul> <!-- cd-filters -->
+			</div> <!-- cd-tab-filter -->
+		</div> <!-- cd-tab-filter-wrapper -->
+
+		<section class="cd-gallery">
+			<ul>
+				<li class="mix confocal HSRB inverted Olympus FV1000 405 458 488 515 559 635 PMT"><img src="img/HSRB_FV1000.jpg" alt="HSRB Olympus FV1000"></li>
+				<li class="mix widefield HSRB inverted Olympus IX71"><img src="img/HSRB_ix71_150px.jpg" alt="HSRB Olympus IX71"></li>
+				<li class="mix confocal multiphoton ClinicB live-cell inverted Zeiss 710 405 458 488 514 543 633 PMT"><img src="img/ClinicB_Zeiss710.jpg" alt="Clinic B Zeiss 710"></li>
+				<li class="mix widefield WBRB inverted BioTek lionheart-fx"><img src="img/WBRB_LionheartFX.png" alt="WBRB Lionheart FX"></li>
+				<li class="mix confocal WBRB inverted live-cell Nikon A1R 405 457 476 488 514 568 638 PMT"><img src="img/WBRB_NikonA1R.jpg" alt="WBRB Nikon A1R"></li>
+				<li class="mix confocal WBRB inverted live-cell Nikon A1RHD25 405 457 488 514 561 640 PMT GaAsP"><img src="img/WBRB_NikonA1RHD25.jpg" alt="WBRB Nikon A1R HD25"></li>
+				<li class="mix confocal WBRB upright Olympus FV1000 405 458 488 514 543 635 PMT"><img src="img/WBRBOlympus_FV1000upright.jpg" alt="WBRB Olympus FV1000 Upright"></li>
+				<li class="mix confocal WBRB inverted Olympus FV1000 405 488 515 543 635 PMT"><img src="img/WBRB_Olympus_FV1000inverted.jpg" alt="WBRB Olympus FV1000 Inverted"></li>
+				<li class="mix light_sheet WCI live-cell 3i LLS lattice light 405 488 560 640 sCMOS"><img src="img/WCI_3iLLS.png" alt="WCI 3i Lattice Light Sheet"></li>
+				<li class="mix super-res live-cell GE DeltaVision OMX Blaze 405 488 568 642 widefield SIM sCMOS"><img src="img/HSRB_GE_OMX.jpg" alt="HSRB GE DeltaVision OMX"></li>
+				<li class="mix confocal WCI live-cell Leica SP8 405 458 514 561 633 HyD PMT"><img src="img/WCI_Leica_SP8.jpg" alt="WCI Leica SP8"></li>
+				<li class="mix widefield super-res live-cell Nikon N-SIM SIM 488 561 EMCCD"><img src="img/WBRB_Nikon-NSIM.jpg" alt="WBRB Nikon N-SIM"> </li>
+				<li class="mix widefield WCI inverted Olympus IX51"><img src="img/WCI_Olympus_IX51.jpg" alt="WCI Olympus IX51"></li>
+				<li class="mix widefield WCI upright Zeiss Axioplan2"><img src="img/WCI_Zeiss_axioplan2.jpg" alt="WCI Zeiss Axioplan 2"></li>
+				<li class="mix widefield WCI inverted Zeiss ObserverA1"><img src="img/WCI_zeiss_observer_a1.jpg" alt="WCI Zeiss Observer.A1"></li>
+				<li>class="mix confocal spinning-disk WCI live-cell Nikon Crest ></li>
+				<li class="gap"></li>
+				<li class="gap"></li>
+			</ul>
+			<div class="cd-fail-message">No results found</div>
+		</section> <!-- cd-gallery -->
+
+		<div class="cd-filter">
+			<form>
+				<div class="cd-filter-block">
+					<h4>Search</h4>
+					
+					<div class="cd-filter-content">
+						<input type="search" placeholder="Try Nikon...">
+					</div> <!-- cd-filter-content -->
+				</div> <!-- cd-filter-block -->
+
+				<div class="cd-filter-block">
+					<h4>Location</h4>
+
+					<ul class="cd-filter-content cd-filters list">
+						<li>
+							<input class="filter" data-filter="" type="radio" name="radioButton" id="radio1" checked>
+							<label class="radio-label" for="radio1">All</label>
+						</li>
+
+						<li>
+							<input class="filter" data-filter=".HSRB" type="radio" name="radioButton" id="loc-hsrb">
+							<label class="radio-label" for="loc-hsrb">Health Sciences Research Building</label>
+						</li>
+
+						<li>
+							<input class="filter" data-filter=".WBRB" type="radio" name="radioButton" id="loc-wbrb">
+							<label class="radio-label" for="loc-wbrb">Whitehead Biomedical Research Building</label>
+						</li>
+						
+						<li>
+							<input class="filter" data-filter=".WCI" type="radio" name="radioButton" id="loc-wci">
+							<label class="radio-label" for="loc-wci">Winship Cancer Institute</label>
+						</li>
+
+						<li>
+							<input class="filter" data-filter=".ClinicB" type="radio" name="radioButton" id="loc-ClinicB">
+							<label class="radio-label" for="loc-ClinicB">Winship Clinic B</label>
+						</li>
+
+					</ul> <!-- cd-filter-content -->
+				</div> <!-- cd-filter-block -->
+
+				<div class="cd-filter-block">
+					<h4>Objective orientation</h4>
+
+					<ul class="cd-filter-content cd-filters list">
+						<li>
+							<input class="filter" data-filter="" type="checkbox" id="checkbox-all">
+							<label class="checkbox-label" for="checkbox-all">All</label>
+						</li>
+
+						<li>
+							<input class="filter" data-filter=".upright" type="checkbox" id="checkbox-upright">
+							<label class="checkbox-label" for="checkbox-upright">Upright</label>
+						</li>
+
+						<li>
+							<input class="filter" data-filter=".inverted" type="checkbox" id="checkbox-inverted">
+							<label class="checkbox-label" for="checkbox-inverted">Inverted</label>
+						</li>
+						
+						<li>
+							<input class="filter" data-filter=".light_sheet" type="checkbox"id="checkbox-light_sheet">
+							<label class="checkbox-label" for="checkbox-light_sheet">Light sheet</label>
+						</li>
+
+					</ul> <!-- cd-filter-content -->
+				</div> <!-- cd-filter-block -->
+
+				<div class="cd-filter-block">
+					<h4>Laser lines</h4>
+
+					<ul class="cd-filter-content cd-filters list">
+						
+						<li>
+							<input class="filter" data-filter=".405" type="checkbox" id="checkbox405">
+			    			<label class="checkbox-label" for="checkbox405">405</label>
+						</li>
+
+
+						<li>
+							<input class="filter" data-filter=".457" type="checkbox" id="checkbox457">
+			    			<label class="checkbox-label" for="checkbox457">457</label>
+						</li>
+
+						<li>
+							<input class="filter" data-filter=".476" type="checkbox" id="checkbox476">
+			    			<label class="checkbox-label" for="checkbox476">476</label>
+						</li>
+
+						<li>
+							<input class="filter" data-filter=".488" type="checkbox" id="checkbox488">
+			    			<label class="checkbox-label" for="checkbox488">488</label>
+						</li>
+
+						<li>
+							<input class="filter" data-filter=".514" type="checkbox" id="checkbox514">
+			    			<label class="checkbox-label" for="checkbox514">514</label>
+						</li>
+
+					</ul> <!-- cd-filter-content -->
+				</div> <!-- cd-filter-block -->
+
+				
+				
+			</form>
+
+			<a href="#0" class="cd-close">Close</a>
+		</div> <!-- cd-filter -->
+
+		<a href="#0" class="cd-filter-trigger">Filters</a>
+	</main> <!-- cd-main-content -->
+<script src="js/jquery-2.1.1.js"></script>
+<script src="js/jquery.mixitup.min.js"></script>
+<script src="js/main.js"></script> <!-- Resource jQuery -->
+</body>
+</html>
