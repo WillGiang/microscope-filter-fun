@@ -92,7 +92,7 @@ Main Components
     padding-top: 90px;
   }
 }
-@media only screen and (min-width: 1170px) {
+@media only screen and (min-width: 1000px) {
   .cd-main-content.is-fixed .cd-gallery {
     padding-top: 100px;
   }
@@ -154,7 +154,7 @@ xtab-filter
   display: none;
 }
 .cd-tab-filter li:first-child {
-  /* this way the placehodler is alway visible */
+  /* this way the placehodler is always visible */
   display: block;
 }
 .cd-tab-filter a {
@@ -254,7 +254,8 @@ xgallery
 -------------------------------- */
 .cd-gallery {
   padding: 26px 5%;
-  width: 100%;
+  width: 60%;
+  float: right;
 }
 .cd-gallery li {
   margin-bottom: 1.6em;
@@ -278,6 +279,7 @@ xgallery
 @media only screen and (min-width: 768px) {
   .cd-gallery {
     padding: 40px 3%;
+    float: right;
   }
   .cd-gallery ul {
     text-align: justify;
@@ -288,13 +290,13 @@ xgallery
     clear: both;
   }
   .cd-gallery li {
-    width: 48%;
+    width: 50%;
     margin-bottom: 2em;
   }
 }
 @media only screen and (min-width: 1170px) {
   .cd-gallery {
-    padding: 50px 2%;
+    padding: 50px 3%;
     float: right;
     -webkit-transition: width 0.3s;
     -moz-transition: width 0.3s;
@@ -305,7 +307,7 @@ xgallery
   }
   .cd-gallery.filter-is-visible {
     /* reduce width when filter is visible */
-    width: 80%;
+    width: 50%;
   }
 }
 
